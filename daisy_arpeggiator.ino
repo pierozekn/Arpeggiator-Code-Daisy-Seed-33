@@ -206,7 +206,7 @@ void setup() {
   env.SetSustainLevel(.25);
 
   // Set parameters for oscillator
-  osc.SetWaveform(WAVE_POLYBLEP_TRI);
+  osc.SetWaveform(osc.WAVE_POLYBLEP_TRI);
   osc.SetFreq(440);
   osc.SetAmp(2.0);
 
