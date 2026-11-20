@@ -168,7 +168,7 @@ void readButtons() {
     selectedtonality = min_seventh;
   }
   else if (minorMode) {
-    selectedtonality = min;
+    selectedtonality = minor;
   }
   else if (seventhMode) {
     selectedtonality = maj_seventh;
@@ -200,7 +200,7 @@ void setup() {
 
   // Set envelope parameters
   env.SetTime(ADSR_SEG_ATTACK, .1);
-  env.SetTime(ADSR_SEG_DECAY, .1);
+  env.SetTime(ADSR_SEG_DECAY, .3);
   env.SetTime(ADSR_SEG_RELEASE, .01);
 
   env.SetSustainLevel(.25);
